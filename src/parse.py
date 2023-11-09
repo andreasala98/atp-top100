@@ -42,7 +42,6 @@ def get_ranking_page(year, month, day, page = 1):
         rank = tr.find("td" , attrs={"class": "rank first"}).text.strip() 
         points = tr.find("td" , attrs={"class": "long-point"}).text.strip() 
         
-
         ## putting data together    
         dict = {'player' : player,
                  'rank' : int(rank.strip('.')), 
